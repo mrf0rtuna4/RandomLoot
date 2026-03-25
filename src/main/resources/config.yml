@@ -1,0 +1,50 @@
+# RandomLoot v1.0 - Конфиг
+# Плагин с рандомным лутом из блоков и мобов
+
+settings:
+  # Основные функции
+  enable-block-loot: true          # Выпадать ли рандомному луту при ломании блока
+  enable-mob-loot: true            # Включить ли функцию лута из мобов
+  enable-mob-spawn: true           # Спавнить ли рандомных мобов при ломании
+  enable-special-events: true      # Включить ли спецсобытия (взрывы, эффекты и т.п.)
+
+  # Вероятности (0.0 = 0%, 1.0 = 100%)
+  mob-spawn-chance: 0.15           # Вероятность спавна моба при ломании (15%)
+  special-event-chance: 0.10       # Общая вероятность спецсобытия (10%)
+
+  # Типы специальных событий (их сумма не должна превышать 1.0)
+  explosion-event-chance: 0.05     # Взрыв (5%)
+  effect-event-chance: 0.08        # Эффект зелья (8%)
+  particle-event-chance: 0.12      # Эффект частиц (12%)
+
+  # Количество лута (рандом в диапазоне)
+  min-loot-count: 1                # Минимум предметов в одном дропе
+  max-loot-count: 3                # Максимум предметов в одном дропе
+  min-loot-amount: 1               # Минимум штук одного предмета
+  max-loot-amount: 5               # Максимум штук одного предмета
+
+  # Чёрный список блоков (лут не выпадает)
+  block-blacklist:
+    - BEDROCK
+    - OBSIDIAN
+    - COMMAND_BLOCK
+    - BARRIER
+    - REPEATING_COMMAND_BLOCK
+    - CHAIN_COMMAND_BLOCK
+    - STRUCTURE_BLOCK
+    - JIGSAW
+    - SPAWNER
+
+  # Белый список блоков (если не пуст, лут выпадает ТОЛЬКО из этих блоков)
+  # Закомментируйте или оставьте пустым, чтобы отключить
+  block-whitelist: []
+    # - STONE
+    # - DIRT
+  # - GRASS_BLOCK
+
+  # Исключённые предметы (не выпадают как лут)
+  excluded-items:
+    - AIR
+    - CAVE_AIR
+    - VOID_AIR
+    - STRUCTURE_VOID

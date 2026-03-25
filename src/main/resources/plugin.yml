@@ -1,0 +1,22 @@
+name: RandomLoot
+version: '0.1.0'
+main: org.heypers.randomLoot.RandomLoot
+api-version: '1.21'
+authors: [ mr_fortuna ]
+description: Плагин с рандомным лутом из блоков и мобов
+website: https://www.heypers.org/
+
+commands:
+  randomloot:
+    description: Главная команда плагина RandomLoot
+    usage: /randomloot <subcommand>
+    aliases: [rl, loot]
+    permission: randomloot.command
+
+permissions:
+  randomloot.admin:
+    description: Доступ к админ командам
+    default: op
+  randomloot.command:
+    description: Использование основной команды
+    default: op
