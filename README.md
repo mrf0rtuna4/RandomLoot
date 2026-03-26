@@ -8,6 +8,9 @@
 
 > RandomLoot is a lightweight Paper (Purpur) plugin that replaces default block drops with unpredictable loot and optional event effects.
 
+<img width="1366" height="745" alt="Example 1" src="https://github.com/user-attachments/assets/7d3f279b-e20a-4f4c-b154-2d37ae53cf3b" />
+
+
 RandomLoot was recently used during a special Heypers 5th anniversary event, and is now officially released as a public repository.
 
 ## Features
